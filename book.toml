@@ -2,13 +2,14 @@
 authors = ["Raphaël M."]
 language = "en"
 src = "src"
-title = "OSDev: The Simple Way"
+title = "Operating System Developement: The Simple Way"
 
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-git-repository-url = "https://codeberg.org/raphm4044/osdsw"
-git-repository-icon = "fa-brands fa-git"
+git-repository-url = "https://github.com/raphm4044/osdsw"
+edit-url-template = "https://github.com/raphm4044/osdsw/edit/main/{path}"
+git-repository-icon = "fa-brands fa-github"
 additional-css = [ "./theme/fa6_all.css", "theme/css/chrome.add.css" ]
 
 [output.html.fold]

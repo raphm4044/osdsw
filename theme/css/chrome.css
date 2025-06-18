@@ -616,7 +616,7 @@ html:not(.sidebar-resizing) .sidebar {
 .spacer {
     width: 100%;
     height: 3px;
-    margin: 5px 0px;
+    margin: 7px 0px;
 }
 .chapter .spacer {
     background-color: var(--sidebar-spacer);
@@ -635,7 +635,6 @@ html:not(.sidebar-resizing) .sidebar {
 }
 
 .section .chapter-item {
-
     font-weight: 500;
 }
 
