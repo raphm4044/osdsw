@@ -1,0 +1,12 @@
+[book]
+authors = ["Raphaël M."]
+language = "en"
+src = "src"
+title = "OSDev: The Simple Way"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://codeberg.org/raphm4044/osdsw"
+git-repository-icon = "fa-brands fa-git"
+additional-css = [ "./theme/fa6_all.css", "theme/css/chrome.add.css" ]

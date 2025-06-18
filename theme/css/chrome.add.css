@@ -1,0 +1,8 @@
+.chapter {
+    margin-top: 0;
+}
+
+.chapter li.chapter-item {
+    margin-top: 0;
+	line-height: 1.5em;
+}
