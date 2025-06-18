@@ -171,7 +171,7 @@ blockquote {
     color: var(--warning-border);
     font-weight: bold;
     font-size: 2rem;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 6 Free";
 }
 
 .note {
@@ -191,7 +191,7 @@ blockquote {
     color: var(--note-border);
     font-weight: bold;
     font-size: 2rem;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 6 Free";
 }
 
 blockquote .warning:before {

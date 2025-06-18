@@ -199,10 +199,15 @@ html:not(.js) .left-buttons button {
 
 /* Inline code */
 
+.hljs {
+    background-color: var(--code-bg) !important;
+    border-radius: 10px;
+}
+
 :not(pre) > .hljs {
     display: inline;
     padding: 0.1em 0.3em;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 :not(pre):not(a) > .hljs {
@@ -260,16 +265,28 @@ pre > .buttons button {
 }
 
 pre > .buttons button.clip-button {
-    padding: 2px 4px 0px 6px;
+    padding: 4px 4px 4px 4px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--searchbar-bg);
+    border: 1px solid var(--searchbar-border-color);
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 2px var(--searchbar-shadow-color);
 }
 pre > .buttons button.clip-button::before {
-    /* clipboard image from octicons (https://github.com/primer/octicons/tree/v2.0.0) MIT license
-     */
-    
-    filter: var(--copy-button-filter);
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    content: '\f0c5';
+    font-family: "Font Awesome 6 Free";
+    display: inline-block;
+    position: relative; top: -6px;
+    vertical-align: middle; /* Ça va la recentrer comme un prince. */
+    /* Si c'est encore chelou, ajuste comme ça : vertical-align: -2px; */
 }
+
 pre > .buttons button.clip-button:hover::before {
-    filter: var(--copy-button-filter-hover);
+    color: var(--icons-hover)
 }
 
 @media (pointer: coarse) {
@@ -340,15 +357,19 @@ mark.fade-out {
     margin-inline-start: auto;
     margin-inline-end: auto;
     padding: 10px 16px;
-    transition: box-shadow 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
     border: 1px solid var(--searchbar-border-color);
-    border-radius: 3px;
+    border-radius: 32px;
     background-color: var(--searchbar-bg);
     color: var(--searchbar-fg);
+    box-shadow: 0px 0px 5px 2px var(--searchbar-shadow-color);
 }
 #searchbar:focus,
 #searchbar.active {
-    box-shadow: 0 0 3px var(--searchbar-shadow-color);
+    outline: none;
+    box-shadow: 0px 0px 50px 10px var(--searchbar-shadow-color);
+    background-color: var(--searchbar-bg-focused);
+    border: 1px solid var(--searchbar-border-color-focused);
 }
 
 .searchresults-header {
@@ -545,6 +566,8 @@ html:not(.sidebar-resizing) .sidebar {
 }
 
 .chapter li {
+    font-weight: 700;
+    margin: 5px 0px;
     display: flex;
     color: var(--sidebar-non-existant);
 }
@@ -608,6 +631,12 @@ html:not(.sidebar-resizing) .sidebar {
     list-style: none outside none;
     padding-inline-start: 20px;
     line-height: 1.9em;
+
+}
+
+.section .chapter-item {
+
+    font-weight: 500;
 }
 
 /* Theme Menu Popup */

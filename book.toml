@@ -10,3 +10,15 @@ preferred-dark-theme = "navy"
 git-repository-url = "https://codeberg.org/raphm4044/osdsw"
 git-repository-icon = "fa-brands fa-git"
 additional-css = [ "./theme/fa6_all.css", "theme/css/chrome.add.css" ]
+
+[output.html.fold]
+enable = false    # whether or not to enable section folding
+level = 0         # the depth to start folding
+
+# We do not need the Rust playground
+[output.html.playground]
+editable     = false    
+copyable     = true
+copy-js      = false
+line-numbers = false
+runnable     = false

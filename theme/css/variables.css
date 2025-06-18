@@ -74,23 +74,23 @@
 
 .navy {
     --bg: rgb(16, 16, 16);
-    --fg: #bcbdd0;
+    --fg: #c8bcd0;
 
     --menu-bar-bg: transparent;
 
     --sidebar-border-color: #1b1b1b;
     --sidebar-bg: rgb(12, 12, 12);
     --sidebar-fg: #d6d6d6;
-    --sidebar-non-existant: #505274;
-    --sidebar-active: #95caff;
-    --sidebar-spacer: #2d334f;
+    --sidebar-non-existant: #615074;
+    --sidebar-active: #cf95ff;
+    --sidebar-spacer: #3f2d4f;
 
     --scrollbar: var(--sidebar-fg);
 
-    --icons: #737480;
-    --icons-hover: #b7b9cc;
+    --icons: #e1d0e9;
+    --icons-hover: #ffffff;
 
-    --links: #2b79a2;
+    --links: #7c2ba2;
 
     --inline-code-color: #c5c8c6;
 
@@ -104,25 +104,24 @@
     --warning-border: #ff8e00;
     --note-border:rgb(0, 94, 255);
 
-    --table-border-color: hsl(226, 23%, 16%);
-    --table-header-bg: hsl(226, 23%, 31%);
-    --table-alternate-bg: hsl(226, 23%, 14%);
+    --table-border-color: #110116;
+    --table-header-bg: hsl(261, 50%, 27%);
+    --table-alternate-bg: hsl(266, 44%, 13%);
 
-    --searchbar-border-color: #aaa;
-    --searchbar-bg: #aeaec6;
-    --searchbar-fg: #000;
-    --searchbar-shadow-color: #aaa;
+    --searchbar-border-color: #303030;
+    --searchbar-bg: #242424;
+    --searchbar-bg-focused: #303030;
+    --searchbar-border-color-focused: #424242;
+    --searchbar-fg: #ffffff;
+    --searchbar-shadow-color: #34005f;
     --searchresults-header-fg: #5f5f71;
     --searchresults-border-color: #5c5c68;
     --searchresults-li-bg: #242430;
     --search-mark-bg: #a2cff5;
 
-    --color-scheme: dark;
+    --code-bg: #1b1b1b;
 
-    /* Same as `--icons` */
-    --copy-button-filter: invert(51%) sepia(10%) saturate(393%) hue-rotate(198deg) brightness(86%) contrast(87%);
-    /* Same as `--sidebar-active` */
-    --copy-button-filter-hover: invert(46%) sepia(20%) saturate(1537%) hue-rotate(156deg) brightness(85%) contrast(90%);
+    --color-scheme: dark;
 
     --footnote-highlight: #4079ae;
 
